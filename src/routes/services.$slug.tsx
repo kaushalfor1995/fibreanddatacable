@@ -113,7 +113,7 @@ function ServiceDetail() {
         <div>
           <h2 className="text-2xl font-semibold">What's included</h2>
           <ul className="mt-6 space-y-3">
-            {service.points.map((p) => (
+            {service.points.map((p: string) => (
               <li key={p} className="flex gap-3 text-sm">
                 <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-brand" />
                 <span>{p}</span>
