@@ -11,6 +11,9 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { Header } from "@/components/site/Header";
+import { Footer } from "@/components/site/Footer";
+import { FloatingActions } from "@/components/site/FloatingActions";
 
 function NotFoundComponent() {
   return (
@@ -77,21 +80,67 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Fibre & Data Cabling | NBN FTTP & Data Cabling Perth" },
+      {
+        name: "description",
+        content:
+          "Perth fibre optic, NBN FTTP pathway, data cabling and CCTV specialists. Reliable residential and commercial telecommunications. Call 0470 661 700.",
+      },
+      { name: "author", content: "Fibre & Data Cabling" },
+      { property: "og:site_name", content: "Fibre & Data Cabling" },
       { property: "og:type", content: "website" },
+      { property: "og:locale", content: "en_AU" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "geo.region", content: "AU-WA" },
+      { name: "geo.placename", content: "Perth, Western Australia" },
     ],
     links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: appCss,
+        href: "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap",
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "@id": "https://fibredatacabling.com.au/#business",
+          name: "Fibre & Data Cabling",
+          description:
+            "Fibre optic, NBN FTTP pathway, data cabling, network cabling and CCTV installation specialists serving Perth, Western Australia.",
+          telephone: "+61470661700",
+          email: "fibredatacable@gmail.com",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Perth",
+            addressRegion: "WA",
+            addressCountry: "AU",
+          },
+          areaServed: { "@type": "City", name: "Perth" },
+          openingHoursSpecification: [
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+              ],
+              opens: "07:00",
+              closes: "17:00",
+            },
+          ],
+          priceRange: "$$",
+        }),
+      },
     ],
   }),
   shellComponent: RootShell,
@@ -102,7 +151,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en-AU">
       <head>
         <HeadContent />
       </head>
@@ -119,8 +168,15 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <Outlet />
+      <div className="flex min-h-screen flex-col">
+        <Header />
+        <main className="flex-1">
+          {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+          <Outlet />
+        </main>
+        <Footer />
+        <FloatingActions />
+      </div>
     </QueryClientProvider>
   );
 }
