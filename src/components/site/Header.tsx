@@ -12,9 +12,19 @@ export function Header() {
       <div className="container-page flex h-18 items-center justify-between gap-4 py-3">
         <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <span className="flex size-10 items-center justify-center rounded-lg bg-brand-soft text-brand">
-            <svg viewBox="0 0 24 24" className="size-5" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M3 12h4l2-5 3 10 2.5-7 1.5 2h5" strokeLinecap="round" strokeLinejoin="round" />
+            <svg viewBox="0 0 24 24" className="size-5" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+              {/* fibre optic cable: jacket, connector ferrule and fanned light strands */}
+              <path d="M2 12h4" />
+              <rect x="6" y="9.5" width="4.5" height="5" rx="1" />
+              <path d="M10.5 12h1.5" />
+              <path d="M12 12c3 0 4.5-4 8-4.5" />
+              <path d="M12 12c3.2 0 4.8 4 8 4.5" />
+              <path d="M12 12h7.5" />
+              <circle cx="20.6" cy="7.2" r="1.2" fill="currentColor" stroke="none" />
+              <circle cx="20.6" cy="16.8" r="1.2" fill="currentColor" stroke="none" />
+              <circle cx="20.6" cy="12" r="1.2" fill="currentColor" stroke="none" />
             </svg>
+
           </span>
           <span className="leading-tight">
             <span className="block font-display text-base font-semibold">Fibre &amp; Data Cabling</span>
