@@ -33,15 +33,15 @@ export function GalleryGrid({ limit }: { limit?: number }) {
 
       <Dialog open={active !== null} onOpenChange={(o) => !o && setActive(null)}>
         <DialogContent className="max-w-4xl overflow-hidden p-0">
-          {active !== null && (
+          {active !== null && items[active] && (
             <>
-              <DialogTitle className="sr-only">{items[active].caption}</DialogTitle>
+              <DialogTitle className="sr-only">{items[active]!.caption}</DialogTitle>
               <img
-                src={items[active].src}
-                alt={items[active].alt}
+                src={items[active]!.src}
+                alt={items[active]!.alt}
                 className="max-h-[75vh] w-full object-contain bg-surface"
               />
-              <p className="px-6 py-4 text-sm text-muted-foreground">{items[active].caption}</p>
+              <p className="px-6 py-4 text-sm text-muted-foreground">{items[active]!.caption}</p>
             </>
           )}
         </DialogContent>
