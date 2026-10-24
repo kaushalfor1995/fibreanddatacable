@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { z } from "zod";
 
-const RECIPIENT = "fibredatacable@gmail.com";
+const RECIPIENT = "fibreanddatacable@gmail.com";
 const GATEWAY_URL = "https://connector-gateway.lovable.dev/resend";
 
 const enquirySchema = z.object({
