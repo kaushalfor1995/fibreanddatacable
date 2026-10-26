@@ -77,9 +77,9 @@ function Contact() {
               <li className="flex gap-3">
                 <Clock className="mt-0.5 size-4 shrink-0 text-brand" />
                 <span>
-                  Monday–Saturday
+                  Open every day
                   <br />
-                  7:00 AM – 5:00 PM
+                  24 hours
                 </span>
               </li>
             </ul>
