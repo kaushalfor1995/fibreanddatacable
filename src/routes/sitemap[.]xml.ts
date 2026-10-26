@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 import { services } from "@/lib/services";
 
-const BASE_URL = "https://perth-fibre-connect.lovable.app";
+const BASE_URL = "https://fibreanddatacable.lovable.app";
 
 interface SitemapEntry {
   path: string;

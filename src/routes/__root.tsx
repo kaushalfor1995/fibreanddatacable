@@ -88,6 +88,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Perth fibre optic, NBN FTTP pathway, data cabling and CCTV specialists. Reliable residential and commercial telecommunications. Call 0470 661 700.",
       },
       { name: "author", content: "Fibre & Data Cabling" },
+      { name: "google-site-verification", content: "ooaDuUXz7uhX-ZNC6wVv6YeL1cAUhlRtmsP-JUphJAY" },
       { property: "og:site_name", content: "Fibre & Data Cabling" },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_AU" },
