@@ -45,7 +45,7 @@ export const Route = createFileRoute("/services/$slug")({
               "@type": "LocalBusiness",
               name: "Fibre & Data Cabling",
               telephone: "+61470661700",
-              email: "fibredatacable@gmail.com",
+              email: "fibreanddatacable@gmail.com",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Perth",

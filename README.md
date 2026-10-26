@@ -15,7 +15,7 @@ Phone:
 0470 661 700
 
 Email:
-fibredatacable@gmail.com
+fibreanddatacable@gmail.com
 
 The website should feel simple, trustworthy and premium. Use a light colour palette with white backgrounds, light grey sections, charcoal text and a soft blue accent colour. Avoid bright orange, dark navy backgrounds, heavy gradients and excessive animations. Keep the layout clean with plenty of white space and make it fully responsive for desktop, tablet and mobile.
 
@@ -132,7 +132,7 @@ Phone:
 0470 661 700
 
 Email:
-fibredatacable@gmail.com
+fibreanddatacable@gmail.com
 
 Location:
 Perth, Western Australia
@@ -155,7 +155,7 @@ Send Enquiry
 
 Every enquiry must be sent directly to:
 
-fibredatacable@gmail.com
+fibreanddatacable@gmail.com
 
 Use Resend with a secure serverless backend for email delivery.
 
@@ -169,7 +169,7 @@ Include:
 
 - Fibre & Data Cabling
 - Phone: 0470 661 700
-- Email: fibredatacable@gmail.com
+- Email: fibreanddatacable@gmail.com
 - Perth, Western Australia
 - Quick Links
 - Privacy Policy

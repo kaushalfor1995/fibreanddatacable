@@ -116,7 +116,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           description:
             "Fibre optic, NBN FTTP pathway, data cabling, network cabling and CCTV installation specialists serving Perth, Western Australia.",
           telephone: "+61470661700",
-          email: "fibredatacable@gmail.com",
+          email: "fibreanddatacable@gmail.com",
           address: {
             "@type": "PostalAddress",
             addressLocality: "Perth",

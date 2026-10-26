@@ -3,7 +3,7 @@ export const site = {
   tagline: "Connecting Perth with Reliable Fibre & Data Solutions",
   phone: "0470 661 700",
   phoneHref: "tel:+61470661700",
-  email: "fibredatacable@gmail.com",
+  email: "fibreanddatacable@gmail.com",
   location: "Perth, Western Australia",
   hours: "Monday–Saturday, 7:00 AM – 5:00 PM",
 } as const;
