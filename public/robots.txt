@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://perth-fibre-connect.lovable.app/sitemap.xml
+Sitemap: https://fibreanddatacable.lovable.app/sitemap.xml
