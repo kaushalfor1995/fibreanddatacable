@@ -5,7 +5,7 @@ export const site = {
   phoneHref: "tel:+61470661700",
   email: "fibreanddatacable@gmail.com",
   location: "Perth, Western Australia",
-  hours: "Monday–Saturday, 7:00 AM – 5:00 PM",
+  hours: "Open every day, 24 hours",
 } as const;
 
 export const navLinks = [
