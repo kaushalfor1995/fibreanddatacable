@@ -1,4 +1,4 @@
 - [x] Check the linked Google Search Console account and property access.
 - [x] Add the root ownership verification tag and correct the existing sitemap origin.
-- [ ] Publish required changes with approval and confirm the live tag and sitemap.
-- [ ] Verify ownership, add the property, and submit its sitemap.
+- [x] Publish required changes with approval and confirm the live tag and sitemap.
+- [x] Verify ownership, add the property, and submit its sitemap (Google received 20 URLs with no errors or warnings).
