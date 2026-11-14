@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fibreanddatacable.com.au/sitemap.xml
+Sitemap: https://fibreanddatacable.lovable.app/sitemap.xml
