@@ -16,7 +16,6 @@ import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
 import { Route as ReviewsRouteImport } from './routes/reviews'
 import { Route as ServicesRouteImport } from './routes/services'
-import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as TermsAndConditionsRouteImport } from './routes/terms-and-conditions'
 import { Route as ServicesIndexRouteImport } from './routes/services.index'
 import { Route as ServicesSlugRouteImport } from './routes/services.$slug'
@@ -57,11 +56,6 @@ const ServicesRoute = ServicesRouteImport.update({
   path: '/services',
   getParentRoute: () => rootRouteImport,
 } as any)
-const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
-  id: '/sitemap.xml',
-  path: '/sitemap.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const TermsAndConditionsRoute = TermsAndConditionsRouteImport.update({
   id: '/terms-and-conditions',
   path: '/terms-and-conditions',
@@ -91,7 +85,6 @@ export interface FileRoutesByFullPath {
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRouteWithChildren
-  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/services/$slug': typeof ServicesSlugRoute
   '/services/': typeof ServicesIndexRoute
@@ -104,7 +97,6 @@ export interface FileRoutesByTo {
   '/gallery': typeof GalleryRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/reviews': typeof ReviewsRoute
-  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/services/$slug': typeof ServicesSlugRoute
   '/services': typeof ServicesIndexRoute
@@ -119,7 +111,6 @@ export interface FileRoutesById {
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRouteWithChildren
-  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/services/$slug': typeof ServicesSlugRoute
   '/services/': typeof ServicesIndexRoute
@@ -135,7 +126,6 @@ export interface FileRouteTypes {
     | '/privacy-policy'
     | '/reviews'
     | '/services'
-    | '/sitemap.xml'
     | '/terms-and-conditions'
     | '/services/$slug'
     | '/services/'
@@ -148,7 +138,6 @@ export interface FileRouteTypes {
     | '/gallery'
     | '/privacy-policy'
     | '/reviews'
-    | '/sitemap.xml'
     | '/terms-and-conditions'
     | '/services/$slug'
     | '/services'
@@ -162,7 +151,6 @@ export interface FileRouteTypes {
     | '/privacy-policy'
     | '/reviews'
     | '/services'
-    | '/sitemap.xml'
     | '/terms-and-conditions'
     | '/services/$slug'
     | '/services/'
@@ -177,7 +165,6 @@ export interface RootRouteChildren {
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
   ReviewsRoute: typeof ReviewsRoute
   ServicesRoute: typeof ServicesRouteWithChildren
-  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TermsAndConditionsRoute: typeof TermsAndConditionsRoute
   ApiPublicEnquiryRoute: typeof ApiPublicEnquiryRoute
 }
@@ -233,13 +220,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/sitemap.xml': {
-      id: '/sitemap.xml'
-      path: '/sitemap.xml'
-      fullPath: '/sitemap.xml'
-      preLoaderRoute: typeof SitemapDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/terms-and-conditions': {
       id: '/terms-and-conditions'
       path: '/terms-and-conditions'
@@ -293,7 +273,6 @@ const rootRouteChildren: RootRouteChildren = {
   PrivacyPolicyRoute: PrivacyPolicyRoute,
   ReviewsRoute: ReviewsRoute,
   ServicesRoute: ServicesRouteWithChildren,
-  SitemapDotxmlRoute: SitemapDotxmlRoute,
   TermsAndConditionsRoute: TermsAndConditionsRoute,
   ApiPublicEnquiryRoute: ApiPublicEnquiryRoute,
 }
