@@ -14,7 +14,7 @@ import { faqs, processSteps, site, whyChooseUs } from "@/lib/site";
 
 const title = "Fibre & Data Cabling Perth | NBN FTTP Pathway Specialists";
 const description =
-  "Perth's fibre optic, NBN FTTP pathway, data cabling and CCTV installation specialists. Quality workmanship for residential and commercial projects. Call 0470 661 700.";
+  "Professional NBN fibre installation, NBN box relocation, fibre optic repairs and CAT6 data cabling, CCTV camera install across Perth. Contact Fibre and Data Cabling today. Call 0470 661 700.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
