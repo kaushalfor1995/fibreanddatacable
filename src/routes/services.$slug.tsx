@@ -18,7 +18,7 @@ export const Route = createFileRoute("/services/$slug")({
     }
     const s = loaderData.service;
     const title = `${s.title} Perth | Fibre & Data Cabling`;
-    const description = s.short;
+    const description = `${s.short} Professional ${s.title.toLowerCase()} services across Perth, WA. Residential and commercial installations. Call 0470 661 700 for a free quote.`;
     return {
       meta: [
         { title },
@@ -26,11 +26,16 @@ export const Route = createFileRoute("/services/$slug")({
         { property: "og:title", content: title },
         { property: "og:description", content: description },
         { property: "og:type", content: "article" },
-        { property: "og:url", content: `/services/${params.slug}` },
+        { property: "og:url", content: `https://fibreanddatacable.com.au/services/${params.slug}` },
         { name: "twitter:title", content: title },
         { name: "twitter:description", content: description },
       ],
-      links: [{ rel: "canonical", href: `/services/${params.slug}` }],
+      links: [
+  {
+    rel: "canonical",
+    href: `https://fibreanddatacable.com.au/services/${params.slug}`,
+  },
+],
       scripts: [
         {
           type: "application/ld+json",
