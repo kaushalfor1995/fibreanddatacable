@@ -34,8 +34,8 @@ jobs:
 
       - name: Add custom domain
         run: |
-          mkdir -p dist
-          echo "fibreanddatacable.com.au" > dist/CNAME
+          mkdir -p .output/public
+          echo "fibreanddatacable.com.au" > .output/public/CNAME
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -43,7 +43,7 @@ jobs:
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: .output/public
 
   deploy:
     environment:
