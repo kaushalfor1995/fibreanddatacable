@@ -59,7 +59,7 @@ function Home() {
               <ShieldCheck className="size-3.5" /> Perth, Western Australia
             </span>
             <h1 className="mt-5 text-4xl leading-tight font-semibold text-balance sm:text-5xl">
-              Professional Fibre &amp; Data Cabling Solutions Across Perth
+              Fibre Installation &amp; Professional Data Cabling in Perth
             </h1>
             <p className="mt-5 max-w-xl text-base text-muted-foreground sm:text-lg">
               Specialists in NBN FTTP Pathways, Fibre Optic Installation, Data Cabling, CCTV
