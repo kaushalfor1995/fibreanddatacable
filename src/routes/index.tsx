@@ -12,7 +12,7 @@ import { CtaBand } from "@/components/site/CtaBand";
 import { services } from "@/lib/services";
 import { faqs, processSteps, site, whyChooseUs } from "@/lib/site";
 
-const title = "Fibre & Data Cabling Perth | NBN FTTP Pathway Specialists";
+const title = "NBN Fibre Installation & Data Cabling & CCTV Perth | Fibre and Data Cabling";
 const description =
   "Professional NBN fibre installation, NBN box relocation, fibre optic repairs and CAT6 data cabling, CCTV camera install across Perth. Contact Fibre and Data Cabling today. Call 0470 661 700.";
 
