@@ -4,9 +4,9 @@ import { ServiceCard } from "@/components/site/ServiceCard";
 import { CtaBand } from "@/components/site/CtaBand";
 import { services } from "@/lib/services";
 
-const title = "Our Services | Fibre, Data Cabling & CCTV Perth";
+const title = "NBN Fibre Installation & Data Cabling Services Perth | Fibre & Data Cabling";
 const description =
-  "NBN FTTP pathways, fibre optic installation, fibre splicing, data and network cabling, CCTV, pit and pipe and emergency fibre repairs across Perth WA.";
+  "Perth NBN fibre installation, FTTP pathways, NBN box relocation, fibre repairs, CAT6 data cabling, CCTV and conduit installation. Servicing Perth metro.";
 
 export const Route = createFileRoute("/services/")({
   head: () => ({
