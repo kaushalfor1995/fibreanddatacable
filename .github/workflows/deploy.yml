@@ -33,7 +33,9 @@ jobs:
         run: npm run build
 
       - name: Add custom domain
-        run: echo "fibreanddatacable.com.au" > dist/CNAME
+        run: |
+          mkdir -p dist
+          echo "fibreanddatacable.com.au" > dist/CNAME
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
