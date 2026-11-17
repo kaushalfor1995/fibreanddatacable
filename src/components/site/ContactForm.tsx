@@ -43,21 +43,38 @@ export function ContactForm() {
     setStatus("sending");
     setServerError("");
 
-    try {
-      const res = await fetch("/api/public/enquiry", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(parsed.data),
-      });
-      if (!res.ok) {
-        const body = await res.json().catch(() => ({}) as { error?: string });
-        throw new Error(body.error || "Your enquiry could not be sent. Please call us instead.");
-      }
-      setStatus("sent");
-    } catch (err) {
-      setStatus("error");
-      setServerError(err instanceof Error ? err.message : "Something went wrong.");
-    }
+    
+try {
+  const res = await fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify({
+      access_key: "cc5286e1-5431-44d1-91b0-689b0e01403d",
+      subject: "New Website Enquiry - Fibre & Data Cabling",
+      from_name: "Fibre & Data Cabling Website",
+      ...parsed.data,
+    }),
+  });
+
+  const result = await res.json();
+
+  if (!res.ok || !result.success) {
+    throw new Error(
+      result.message ||
+        "Your enquiry could not be sent. Please call us instead."
+    );
+  }
+
+  setStatus("sent");
+} catch (err) {
+  setStatus("error");
+  setServerError(
+    err instanceof Error ? err.message : "Something went wrong."
+  );
+}
   }
 
   if (status === "sent") {
