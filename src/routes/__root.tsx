@@ -81,11 +81,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Fibre & Data Cabling | NBN FTTP & Data Cabling Perth" },
+      { title: "NBN Box Relocation Perth | FTTP Fibre Pathways | Fibre & Data Cabling" },
       {
         name: "description",
         content:
-          "Perth fibre optic, NBN FTTP pathway, data cabling and CCTV specialists. Reliable residential and commercial telecommunications. Call 0470 661 700.",
+          "Need an NBN box relocation in Perth? We install internal NBN FTTP optical fibre pathways, conduit and data cabling. ACMA Registered Cabler. Request a free quote. Call 0470 661 700.",
       },
       { name: "author", content: "Fibre & Data Cabling" },
       { name: "google-site-verification", content: "ooaDuUXz7uhX-ZNC6wVv6YeL1cAUhlRtmsP-JUphJAY" },
