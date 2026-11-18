@@ -292,7 +292,51 @@ function Home() {
           </div>
         </div>
       </section>
+<section
+  aria-labelledby="nbn-services-heading"
+  className="mx-auto max-w-6xl px-4 py-12"
+>
+  <h2 id="nbn-services-heading" className="mb-4 text-3xl font-bold">
+    NBN Box Relocation and FTTP Fibre Pathways in Perth
+  </h2>
 
+  <p className="mb-8 max-w-3xl">
+    Looking for NBN box relocation in Perth or a better route for your FTTP
+    connection? Fibre &amp; Data Cabling can assess your cabling needs and
+    install internal optical fibre pathways, conduit and data cabling.
+    Contact us to discuss the right solution for your property.
+  </p>
+
+  <div className="grid gap-6 md:grid-cols-2">
+    <article>
+      <h3 className="mb-2 text-xl font-semibold">
+        NBN Box Relocation in Perth
+      </h3>
+      <p>
+        We can assess your current cabling and discuss options for relocating
+        your NBN equipment. The work required depends on the equipment and
+        connection at your property.
+      </p>
+    </article>
+
+    <article>
+      <h3 className="mb-2 text-xl font-semibold">
+        NBN FTTP Optical Fibre Pathways
+      </h3>
+      <p>
+        We install internal pathways and conduit to help route an NBN FTTP
+        optical fibre connection neatly through your home or business.
+      </p>
+    </article>
+  </div>
+
+  <a
+    href="/contact"
+    className="mt-8 inline-block rounded bg-blue-700 px-6 py-3 font-semibold text-white hover:bg-blue-800"
+  >
+    Request a Free Quote
+  </a>
+</section>
       <CtaBand />
 
       <section className="container-page py-16">
