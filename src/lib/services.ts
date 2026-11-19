@@ -220,33 +220,33 @@ export const getService = (slug: string) => services.find((s) => s.slug === slug
 
 export const galleryImages = [
   {
-    src: heroConduit,
-    alt: "Telecommunications technician installing surface-mounted conduit above an NBN LUCA box on a modern two-storey Australian house",
-    caption: "NBN FTTP surface-mounted conduit pathway",
+    "src": "/job-photos/nbn-fibre-connection-box.jpg",
+    "alt": "Wall-mounted NBN fibre connection box with power and optical indicator lights",
+    "caption": "Wall-mounted NBN fibre connection box"
   },
   {
-    src: cctvInstall,
-    alt: "Professional technician installing a CCTV security camera on a building exterior",
-    caption: "CCTV camera installation",
+    "src": "/job-photos/fibre-enclosure-cable-routing.jpg",
+    "alt": "Open external fibre enclosure showing fibre routing and green optical connectors",
+    "caption": "Fibre enclosure and cable routing"
   },
   {
-    src: cat6Outlet,
-    alt: "Close-up of a professionally installed Cat6 Ethernet RJ45 wall outlet on a clean white wall",
-    caption: "Cat6 data outlet",
+    "src": "/job-photos/underground-communications-conduit.jpg",
+    "alt": "Communications conduit laid in an open trench beside lifted driveway pavers",
+    "caption": "Underground communications conduit \u2014 work in progress"
   },
   {
-    src: trenchConduit,
-    alt: "New lead-in communication P20 conduit installed neatly in an underground trench before backfilling",
-    caption: "Lead-in P20 conduit in trench",
+    "src": "/job-photos/fibre-optical-power-testing.jpg",
+    "alt": "Handheld optical power meter connected to a fibre enclosure during signal testing",
+    "caption": "Fibre optical power testing"
   },
   {
-    src: fibreSplicing,
-    alt: "Fibre optic fusion splicing being carried out by a qualified technician",
-    caption: "Fibre fusion splicing",
+    "src": "/job-photos/nbn-connection-enclosure.jpg",
+    "alt": "Open NBN connection enclosure showing the connection device and fibre cable routing",
+    "caption": "NBN connection enclosure \u2014 internal view"
   },
   {
-    src: dataCabling,
-    alt: "Neatly installed network rack with patch panels and Cat6 patch leads",
-    caption: "Commercial comms rack fit-out",
-  },
+    "src": "/job-photos/network-switch-ethernet-cabling.jpg",
+    "alt": "Network switch with blue and white Ethernet cables above a wall-mounted communications cabinet",
+    "caption": "Network switch and Ethernet connections"
+  }
 ];

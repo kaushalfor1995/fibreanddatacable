@@ -5,7 +5,7 @@ import { CtaBand } from "@/components/site/CtaBand";
 
 const title = "Gallery | Fibre & Data Cabling Perth Installations";
 const description =
-  "See our workmanship: NBN FTTP conduit pathways, lead-in conduit trenching, Cat6 data outlets, CCTV installs and commercial comms racks across Perth.";
+  "View real job photos from Fibre & Data Cabling: NBN connection equipment, fibre testing, underground conduit and Ethernet network connections.";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -32,7 +32,7 @@ function Gallery() {
             align="left"
             eyebrow="Gallery"
             title="Our recent work across Perth"
-            subtitle="Click any image to view it full size."
+            subtitle="Real job photos: fibre connections, optical testing, conduit works and network equipment. Click any image to view it full size."
           />
         </div>
       </section>

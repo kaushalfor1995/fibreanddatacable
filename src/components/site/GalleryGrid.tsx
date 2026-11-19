@@ -23,7 +23,8 @@ export function GalleryGrid({ limit }: { limit?: number }) {
                 loading="lazy"
                 width={1200}
                 height={900}
-                className="size-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                decoding="async"
+                className="size-full object-contain bg-surface transition-transform duration-300 group-hover:scale-[1.03]"
               />
             </span>
             <span className="block bg-card px-4 py-3 text-sm font-medium">{img.caption}</span>
