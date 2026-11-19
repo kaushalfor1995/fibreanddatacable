@@ -1,5 +1,5 @@
 import { Star } from "lucide-react";
-import { reviews } from "@/lib/site";
+import { reviews, googleReviewsUrl } from "@/lib/site";
 import {
   Carousel,
   CarouselContent,
@@ -20,6 +20,7 @@ function Stars() {
 
 export function ReviewsCarousel() {
   return (
+    <div>
     <Carousel opts={{ align: "start", loop: true }} className="mx-auto w-full max-w-6xl">
       <CarouselContent className="-ml-4">
         {reviews.map((r) => (
@@ -45,5 +46,10 @@ export function ReviewsCarousel() {
       <CarouselPrevious className="hidden sm:flex" />
       <CarouselNext className="hidden sm:flex" />
     </Carousel>
+    <p className="mt-6 text-center text-sm text-muted-foreground">Selected customer reviews from Google. These are manually added and do not update automatically.</p>
+    <div className="mt-4 text-center">
+      <a href={googleReviewsUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-brand underline underline-offset-4">Read more reviews on Google</a>
+    </div>
+    </div>
   );
 }

@@ -84,35 +84,37 @@ export const faqs = [
   },
 ];
 
+export const googleReviewsUrl = "https://maps.app.goo.gl/YMLQEe5VrA4mTRJS6";
+
 export const reviews = [
   {
-    name: "Michael T.",
-    service: "NBN FTTP Pathway",
-    text: "Outstanding job on our FTTP pathway. The conduit run is dead straight, tidy and you'd barely notice it on the wall. Turned up on time and cleaned up perfectly.",
+    "name": "Caroline Doggett",
+    "service": "Google review",
+    "rating": 5,
+    "text": "Good service, punctual professional. Highly recommend"
   },
   {
-    name: "Sarah K.",
-    service: "Data Cabling",
-    text: "Had eight Cat6 points run through our new Perth home. Professional, careful with the finishes and everything was tested and labelled properly.",
+    "name": "Simon Beaumont",
+    "service": "Google review",
+    "rating": 5,
+    "text": "Great prompt service, got the job done despite variations and complications. Stayed on the original quote, too. Would recommend."
   },
   {
-    name: "David L.",
-    service: "CCTV Installation",
-    text: "Six cameras installed around our warehouse in Malaga. Great advice on placement and the cabling is neat as anything. Highly recommend.",
+    "name": "Dhruvil Patel",
+    "service": "Google review",
+    "rating": 5,
+    "text": "Reliable, professional, and hardworking. Delivers quality work and is great to deal with. Highly recommended!"
   },
   {
-    name: "Emma R.",
-    service: "Lead-in Conduit Installation",
-    text: "Trenched and installed our lead-in conduit in a day. Reinstated the lawn better than they found it. Really easy to deal with.",
+    "name": "Gordon Jones",
+    "service": "Google review",
+    "rating": 5,
+    "text": "Excellent, knowledgeable efficient and very friendly service a a reasonable price!"
   },
   {
-    name: "James P.",
-    service: "Fibre Splicing",
-    text: "Called for an urgent splice on a damaged link. Onsite within hours and back online the same day. Genuinely fast response.",
-  },
-  {
-    name: "Priya N.",
-    service: "Network Cabling",
-    text: "Fitted out our office comms room and patch panel. The rack looks immaculate and the documentation was spot on.",
-  },
+    "name": "Tilly Sommerville",
+    "service": "Google review",
+    "rating": 5,
+    "text": "Very professional, polite , updates on times and a great job done ."
+  }
 ];
