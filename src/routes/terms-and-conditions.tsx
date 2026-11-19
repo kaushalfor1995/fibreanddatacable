@@ -14,7 +14,7 @@ export const Route = createFileRoute("/terms-and-conditions")({
       { property: "og:description", content: description },
       { property: "og:url", content: "/terms-and-conditions" },
     ],
-    links: [{ rel: "canonical", href: "/terms-and-conditions" }],
+    links: [{ rel: "canonical", href: "https://fibreanddatacable.com.au/terms-and-conditions" }],
   }),
   component: Terms,
 });

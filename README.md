@@ -204,17 +204,7 @@ Include:
 
 Overall, the website should look like a professional Australian telecommunications company. Keep the design simple, clean and easy to navigate, with a strong focus on generating enquiries and showcasing high-quality workmanship. Avoid unnecessary animations or flashy colours.
 
-This project was built with [Lovable](https://lovable.dev).
-
-**Live app**: https://fibreanddatacable.lovable.app
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/e4aeb426-0f71-4eb5-b234-ffedd19e70d6).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+**Live website**: https://fibreanddatacable.com.au
 
 ## Development
 

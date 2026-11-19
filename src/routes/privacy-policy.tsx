@@ -14,7 +14,7 @@ export const Route = createFileRoute("/privacy-policy")({
       { property: "og:description", content: description },
       { property: "og:url", content: "/privacy-policy" },
     ],
-    links: [{ rel: "canonical", href: "/privacy-policy" }],
+    links: [{ rel: "canonical", href: "https://fibreanddatacable.com.au/privacy-policy" }],
   }),
   component: Privacy,
 });

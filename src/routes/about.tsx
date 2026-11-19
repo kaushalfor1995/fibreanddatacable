@@ -20,7 +20,7 @@ export const Route = createFileRoute("/about")({
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
     ],
-    links: [{ rel: "canonical", href: "/about" }],
+    links: [{ rel: "canonical", href: "https://fibreanddatacable.com.au/about" }],
   }),
   component: About,
 });
