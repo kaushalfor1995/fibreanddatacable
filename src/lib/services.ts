@@ -284,12 +284,8 @@ export const services: Service[] = [
         a: "The price depends on the length of the fibre route, access to the walls or roof space, whether the run crosses floors and whether new conduit is needed. We review those details before quoting.",
       },
       {
-        q: "Should I move my NBN box or my Wi-Fi router?",
-        a: "If your goal is better Wi-Fi coverage, an Ethernet cable to a better router location or a wired access point may solve it. A relocation makes sense when you need the NBN connection box itself moved for room layout, access or renovation.",
-      },
-      {
-        q: "Who can move the outdoor NBN box?",
-        a: "Contact nbn’s Relocation Works team for external nbn equipment. For your indoor FTTP connection box, we can assess the proposed move against nbn’s Authority to Alter guidelines.",
+        q: "Can you help relocate my outdoor NBN box?",
+        a: "Yes, we can help relocate your outdoor NBN box too. We’ll assess the new location and cable route, install any conduit needed and carry out the move where we’re authorised to do so. Send us photos of the current box and proposed location for a quote.",
       },
     ],
     relatedSlugs: ["nbn-fttp-pathway", "data-cabling", "fibre-optic-installation"],

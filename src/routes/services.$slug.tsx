@@ -139,7 +139,7 @@ function ServiceDetail() {
       {service.questions && (
         <section className="container-page pb-16 lg:pb-20">
           <h2 className="text-2xl font-semibold">Frequently asked questions</h2>
-          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
             {service.questions.map(({ q, a }) => (
               <div key={q} className="rounded-xl border border-border p-5">
                 <h3 className="font-display text-base font-semibold">{q}</h3>
