@@ -5,6 +5,7 @@ import { CtaBand } from "@/components/site/CtaBand";
 import { services } from "@/lib/services";
 import { processSteps, whyChooseUs } from "@/lib/site";
 
+const url = "https://fibreanddatacable.com.au/about/";
 const title = "About Us | Fibre & Data Cabling Perth";
 const description =
   "Fibre & Data Cable Pathway is a trusted Perth telecommunications contractor delivering quality workmanship and reliable service for residential and commercial clients.";
@@ -16,11 +17,11 @@ export const Route = createFileRoute("/about")({
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
-      { property: "og:url", content: "/about" },
+      { property: "og:url", content: url },
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
     ],
-    links: [{ rel: "canonical", href: "https://fibreanddatacable.com.au/about" }],
+    links: [{ rel: "canonical", href: url }],
   }),
   component: About,
 });
@@ -31,6 +32,7 @@ function About() {
       <section className="border-b border-border bg-surface">
         <div className="container-page py-14 lg:py-20">
           <SectionHeading
+            as="h1"
             align="left"
             eyebrow="About"
             title="Perth's trusted fibre and data cabling contractor"

@@ -5,6 +5,7 @@ import { ContactForm } from "@/components/site/ContactForm";
 import { FaqSection } from "@/components/site/FaqSection";
 import { faqs, site } from "@/lib/site";
 
+const url = "https://fibreanddatacable.com.au/contact/";
 const title = "Contact Us | Fibre & Data Cabling Perth | 0470 661 700";
 const description =
   "Contact Fibre & Data Cabling in Perth for fibre optic, NBN FTTP pathway, data cabling and CCTV enquiries. Call 0470 661 700 or send an enquiry online.";
@@ -16,11 +17,11 @@ export const Route = createFileRoute("/contact")({
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
-      { property: "og:url", content: "/contact" },
+      { property: "og:url", content: url },
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
     ],
-    links: [{ rel: "canonical", href: "https://fibreanddatacable.com.au/contact" }],
+    links: [{ rel: "canonical", href: url }],
     scripts: [
       {
         type: "application/ld+json",
@@ -45,6 +46,7 @@ function Contact() {
       <section className="border-b border-border bg-surface">
         <div className="container-page py-14 lg:py-20">
           <SectionHeading
+            as="h1"
             align="left"
             eyebrow="Contact"
             title="Get a free quote"

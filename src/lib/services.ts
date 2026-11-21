@@ -11,6 +11,10 @@ export type Service = {
   icon: string;
   short: string;
   description: string;
+  heading?: string;
+  seo?: { title: string; description: string };
+  quoteDetails?: string;
+  relatedSlugs?: string[];
   image: string;
   alt: string;
   featured?: boolean;
@@ -26,7 +30,15 @@ export const services: Service[] = [
     short:
       "Compliant NBN FTTP pathways including surface-mounted and underground conduit, lead-in conduit and internal fibre pathways.",
     description:
-      "Professional NBN FTTP pathway installations including surface-mounted conduit, underground conduit, lead-in communication conduit, internal fibre pathways and conduit upgrades for residential and commercial properties. All work is completed neatly and in accordance with NBN standards.",
+      "Getting ready for an NBN fibre-to-the-premises (FTTP) upgrade in Perth? We assess existing conduit and install internal fibre pathways, surface-mounted conduit and underground lead-in conduit for homes and businesses. We can help plan a route when an existing conduit is blocked, the driveway is long or you want the indoor NBN box upstairs.",
+    seo: {
+      title: "NBN FTTP Pathway Installation Perth | Fibre & Data Cabling",
+      description:
+        "Need an NBN FTTP pathway in Perth? We install internal fibre pathways and lead-in conduit and assess blocked conduits. Request a free quote.",
+    },
+    quoteDetails:
+      "Tell us your Perth suburb, property type and where you’d like the indoor NBN box. Mention any known blocked conduit, long driveway or route between floors. If you have photos of the existing conduit and proposed box location, have them handy so we can discuss the route with you.",
+    relatedSlugs: ["lead-in-communication-conduit", "fibre-optic-installation", "data-cabling"],
     image: heroConduit,
     alt: "Telecommunications technician installing white surface-mounted conduit above an NBN LUCA box on a modern two-storey Perth home",
     points: [
@@ -40,11 +52,20 @@ export const services: Service[] = [
   {
     slug: "fibre-optic-installation",
     title: "Fibre Optic Installation",
+    heading: "Fibre Optic Cable Installation in Perth",
     icon: "Cable",
     short:
-      "Single-mode and multi-mode fibre optic installation for residential, commercial and industrial sites across Perth.",
+      "Single-mode and multi-mode fibre optic cable installation across Perth, including termination and link testing.",
     description:
-      "End-to-end fibre optic installation covering hauling, termination, patching and certification. We install single-mode and multi-mode fibre for building backbones, campus links and NBN connections, with full OTDR testing and documented results on handover.",
+      "We provide fibre optic cable installation in Perth for homes, commercial properties and industrial sites. We pull, terminate and patch single-mode and multi-mode fibre for building backbones, links between buildings and NBN connections. We test completed links and provide documented results at handover.",
+    seo: {
+      title: "Fibre Optic Installation Perth | Fibre & Data Cabling",
+      description:
+        "Fibre optic cable installation in Perth for homes, businesses and links between buildings. Get a quote for fibre cabling, termination and testing.",
+    },
+    quoteDetails:
+      "Tell us the Perth suburb, where the fibre needs to start and finish, and the estimated cable length. Let us know if you already have conduit, racks or patch panels, and whether the installation needs to happen outside business hours.",
+    relatedSlugs: ["fibre-splicing", "network-cabling", "nbn-fttp-pathway"],
     image: fibreSplicing,
     alt: "Fibre optic cable being prepared for installation by a qualified technician",
     points: [
@@ -57,10 +78,19 @@ export const services: Service[] = [
   {
     slug: "fibre-splicing",
     title: "Fibre Splicing",
+    heading: "Fibre Optic Splicing in Perth",
     icon: "GitMerge",
-    short: "Precision fusion splicing and jointing with low-loss results and full test documentation.",
+    short: "Fusion splicing and testing for new fibre links, damaged cables and network extensions in Perth.",
     description:
-      "Fusion splicing for new builds, extensions, joint enclosures and fault repairs. Using calibrated fusion splicers we deliver low-loss joints, then verify every core with OTDR traces supplied as part of your handover pack.",
+      "We provide fibre splicing in Perth for new installations, network extensions and damaged fibre cables. We fusion-splice individual strands in joint enclosures or fibre panels and check the link with optical time-domain reflectometer (OTDR) testing. We can assess whether the damaged section can be rejoined or needs replacing.",
+    seo: {
+      title: "Fibre Splicing Perth | Fibre & Data Cabling",
+      description:
+        "Perth fibre optic fusion splicing for new connections, network extensions and damaged cables. Request a quote for splicing and OTDR testing.",
+    },
+    quoteDetails:
+      "Tell us the site suburb, whether this is a new connection or a fault, and how many fibre cores need work if known. For a damaged link, include where you suspect the damage is and whether the link is out of service.",
+    relatedSlugs: ["emergency-fibre-repairs", "fibre-optic-installation", "network-cabling"],
     image: fibreSplicing,
     alt: "Technician using a fusion splicer to join fibre optic strands",
     points: [
@@ -73,13 +103,23 @@ export const services: Service[] = [
   {
     slug: "data-cabling",
     title: "Data Cabling",
+    heading: "Data Cabling & Data Point Installation in Perth",
     icon: "Network",
-    short: "Cat5e, Cat6 and Cat6A structured cabling for homes, offices and commercial fit-outs.",
+    short: "CAT6 Ethernet and data point installation for Perth homes, offices and commercial fit-outs.",
     description:
-      "Structured data cabling designed and installed for reliability. From a couple of extra Cat6 points at home to a full commercial fit-out, every outlet is neatly terminated, labelled and certified with a test report.",
+      "Need an Ethernet outlet for a home office, TV or Wi-Fi access point? We provide data point installation and structured data cabling across Perth. We run Cat5e, CAT6 and CAT6A cable for single outlets and multi-room jobs, then terminate, label and test the outlets.",
+    seo: {
+      title: "Data Cabling Perth | CAT6 Data Point Installation",
+      description:
+        "Need a CAT6 data point installed in Perth? We run and test Ethernet cabling for home offices, TVs, Wi-Fi access points and businesses. Get a free quote.",
+    },
+    quoteDetails:
+      "Tell us your Perth suburb, how many Ethernet outlets you need, where they should go and where your router or patch panel sits. Mention if any cable runs need to go between floors.",
+    relatedSlugs: ["network-cabling", "nbn-fttp-pathway", "network-maintenance"],
     image: cat6Outlet,
     alt: "Professionally installed Cat6 Ethernet RJ45 wall outlet on a clean white wall",
     points: [
+      "CAT6 Ethernet data points for home offices, TVs and other wired devices",
       "Cat5e, Cat6 and Cat6A structured cabling",
       "Wall outlets, patch panels and comms cabinets",
       "Neat cable management and labelling",
@@ -89,10 +129,19 @@ export const services: Service[] = [
   {
     slug: "network-cabling",
     title: "Network Cabling",
+    heading: "Commercial Data & Network Cabling in Perth",
     icon: "Server",
-    short: "Comms room fit-outs, racks, patch panels and switch cabling for growing businesses.",
+    short: "Commercial data cabling for Perth offices, fit-outs and communications rooms, including racks and patch panels.",
     description:
-      "Complete network cabling infrastructure for commercial premises — racks and cabinets, patch panels, switch cabling, Wi-Fi access point runs and PoE devices — planned for the way your business actually works and ready to scale.",
+      "We provide commercial data cabling in Perth for office fit-outs, refurbishments and communications rooms. We install and label network racks, patch panels and outlets, and run cabling for switches, Wi-Fi access points and other power-over-Ethernet devices.",
+    seo: {
+      title: "Commercial Data Cabling Perth | Fibre & Data Cabling",
+      description:
+        "Commercial data cabling for Perth offices, fit-outs and communications rooms. Get a quote for Ethernet runs, network racks and patch panels.",
+    },
+    quoteDetails:
+      "Tell us the site suburb, number of network outlets, where the racks will go and any access deadlines. For a data centre cabling enquiry in WA, include the site location, rack layout, copper or fibre requirements and any access or outage restrictions so we can confirm the scope we can support.",
+    relatedSlugs: ["data-cabling", "fibre-optic-installation", "fibre-splicing"],
     image: dataCabling,
     alt: "Neatly cable-managed network rack with patch panels and blue Cat6 patch leads",
     points: [

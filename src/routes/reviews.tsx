@@ -5,6 +5,7 @@ import { ReviewsCarousel } from "@/components/site/ReviewsCarousel";
 import { CtaBand } from "@/components/site/CtaBand";
 import { googleReviewsUrl } from "@/lib/site";
 
+const url = "https://fibreanddatacable.com.au/reviews/";
 const title = "Customer Reviews | Fibre & Data Cabling Perth";
 const description =
   "Read 5-star reviews from Perth homeowners and businesses for NBN FTTP pathways, data cabling, fibre splicing and CCTV installation.";
@@ -16,11 +17,11 @@ export const Route = createFileRoute("/reviews")({
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
-      { property: "og:url", content: "/reviews" },
+      { property: "og:url", content: url },
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
     ],
-    links: [{ rel: "canonical", href: "https://fibreanddatacable.com.au/reviews" }],
+    links: [{ rel: "canonical", href: url }],
   }),
   component: Reviews,
 });
@@ -31,6 +32,7 @@ function Reviews() {
       <section className="border-b border-border bg-surface">
         <div className="container-page py-14 text-center lg:py-20">
           <SectionHeading
+            as="h1"
             eyebrow="Customer Review"
             title="Trusted by Perth homes and businesses"
             subtitle="Selected reviews shared by our customers on Google."

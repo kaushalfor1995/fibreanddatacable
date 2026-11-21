@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { site } from "@/lib/site";
 
+const url = "https://fibreanddatacable.com.au/terms-and-conditions/";
 const title = "Terms & Conditions | Fibre & Data Cabling Perth";
 const description =
   "Terms and conditions for quotes, works and website use provided by Fibre & Data Cabling, Perth, Western Australia.";
@@ -12,9 +13,9 @@ export const Route = createFileRoute("/terms-and-conditions")({
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
-      { property: "og:url", content: "/terms-and-conditions" },
+      { property: "og:url", content: url },
     ],
-    links: [{ rel: "canonical", href: "https://fibreanddatacable.com.au/terms-and-conditions" }],
+    links: [{ rel: "canonical", href: url }],
   }),
   component: Terms,
 });

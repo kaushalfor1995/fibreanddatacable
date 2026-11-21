@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { site } from "@/lib/site";
 
+const url = "https://fibreanddatacable.com.au/privacy-policy/";
 const title = "Privacy Policy | Fibre & Data Cabling Perth";
 const description =
   "How Fibre & Data Cabling collects, uses and protects personal information submitted through our Perth website and enquiry form.";
@@ -12,9 +13,9 @@ export const Route = createFileRoute("/privacy-policy")({
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
-      { property: "og:url", content: "/privacy-policy" },
+      { property: "og:url", content: url },
     ],
-    links: [{ rel: "canonical", href: "https://fibreanddatacable.com.au/privacy-policy" }],
+    links: [{ rel: "canonical", href: url }],
   }),
   component: Privacy,
 });

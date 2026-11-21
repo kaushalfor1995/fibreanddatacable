@@ -4,6 +4,7 @@ import { ServiceCard } from "@/components/site/ServiceCard";
 import { CtaBand } from "@/components/site/CtaBand";
 import { services } from "@/lib/services";
 
+const url = "https://fibreanddatacable.com.au/services/";
 const title = "NBN Fibre Installation & Data Cabling Services Perth | Fibre & Data Cabling";
 const description =
   "Perth NBN fibre installation, FTTP pathways, NBN box relocation, fibre repairs, CAT6 data cabling, CCTV and conduit installation. Servicing Perth metro.";
@@ -15,11 +16,11 @@ export const Route = createFileRoute("/services/")({
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
-      { property: "og:url", content: "/services" },
+      { property: "og:url", content: url },
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
     ],
-    links: [{ rel: "canonical", href: "https://fibreanddatacable.com.au/services" }],
+    links: [{ rel: "canonical", href: url }],
     scripts: [
       {
         type: "application/ld+json",
@@ -30,7 +31,7 @@ export const Route = createFileRoute("/services/")({
             "@type": "ListItem",
             position: i + 1,
             name: s.title,
-            url: `/services/${s.slug}`,
+            url: `${url}${s.slug}/`,
           })),
         }),
       },
@@ -45,6 +46,7 @@ function ServicesIndex() {
       <section className="border-b border-border bg-surface">
         <div className="container-page py-14 lg:py-20">
           <SectionHeading
+            as="h1"
             align="left"
             eyebrow="Services"
             title="Fibre, data and telecommunications services in Perth"

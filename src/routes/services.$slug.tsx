@@ -12,13 +12,14 @@ export const Route = createFileRoute("/services/$slug")({
     if (!service) throw notFound();
     return { service };
   },
-  head: ({ loaderData, params }) => {
+  head: ({ loaderData }) => {
     if (!loaderData) {
       return { meta: [{ title: "Service not found | Fibre & Data Cabling" }, { name: "robots", content: "noindex" }] };
     }
     const s = loaderData.service;
-    const title = `${s.title} Perth | Fibre & Data Cabling`;
-    const description = `${s.short} Professional ${s.title.toLowerCase()} services across Perth, WA. Residential and commercial installations. Call 0470 661 700 for a free quote.`;
+    const title = s.seo?.title ?? `${s.title} Perth | Fibre & Data Cabling`;
+    const description = s.seo?.description ?? s.short;
+    const url = `https://fibreanddatacable.com.au/services/${s.slug}/`;
     return {
       meta: [
         { title },
@@ -26,16 +27,11 @@ export const Route = createFileRoute("/services/$slug")({
         { property: "og:title", content: title },
         { property: "og:description", content: description },
         { property: "og:type", content: "article" },
-        { property: "og:url", content: `https://fibreanddatacable.com.au/services/${params.slug}` },
+        { property: "og:url", content: url },
         { name: "twitter:title", content: title },
         { name: "twitter:description", content: description },
       ],
-      links: [
-  {
-    rel: "canonical",
-    href: `https://fibreanddatacable.com.au/services/${params.slug}`,
-  },
-],
+      links: [{ rel: "canonical", href: url }],
       scripts: [
         {
           type: "application/ld+json",
@@ -45,19 +41,9 @@ export const Route = createFileRoute("/services/$slug")({
             name: s.title,
             serviceType: s.title,
             description: s.description,
-            areaServed: { "@type": "City", name: "Perth", addressRegion: "WA", addressCountry: "AU" },
-            provider: {
-              "@type": "LocalBusiness",
-              name: "Fibre & Data Cabling",
-              telephone: "+61470661700",
-              email: "fibreanddatacable@gmail.com",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Perth",
-                addressRegion: "WA",
-                addressCountry: "AU",
-              },
-            },
+            url,
+            areaServed: { "@type": "City", name: "Perth" },
+            provider: { "@id": "https://fibreanddatacable.com.au/#business" },
           }),
         },
       ],
@@ -68,7 +54,9 @@ export const Route = createFileRoute("/services/$slug")({
 
 function ServiceDetail() {
   const { service } = Route.useLoaderData();
-  const others = services.filter((s) => s.slug !== service.slug).slice(0, 3);
+  const others =
+    service.relatedSlugs?.map(getService).filter((related) => related !== undefined) ??
+    services.filter((candidate) => candidate.slug !== service.slug).slice(0, 3);
 
   return (
     <>
@@ -88,7 +76,7 @@ function ServiceDetail() {
               <ServiceIcon name={service.icon} className="size-5" />
             </span>
             <h1 className="mt-5 text-3xl font-semibold text-balance sm:text-4xl">
-              {service.title} in Perth
+              {service.heading ?? `${service.title} in Perth`}
             </h1>
             <p className="mt-4 max-w-xl text-base text-muted-foreground">{service.description}</p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -125,6 +113,14 @@ function ServiceDetail() {
               </li>
             ))}
           </ul>
+          {service.quoteDetails && (
+            <div className="mt-8">
+              <h2 className="text-xl font-semibold">What to send for a quote</h2>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                {service.quoteDetails}
+              </p>
+            </div>
+          )}
         </div>
         <div className="rounded-xl border border-border bg-surface p-6">
           <h2 className="font-display text-lg font-semibold">Why choose us for this work</h2>

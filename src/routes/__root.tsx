@@ -120,6 +120,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@type": "LocalBusiness",
           "@id": "https://fibreanddatacable.com.au/#business",
           name: "Fibre & Data Cabling",
+          url: "https://fibreanddatacable.com.au/",
           description:
             "Fibre optic, NBN FTTP pathway, data cabling, network cabling and CCTV installation specialists serving Perth, Western Australia.",
           telephone: "+61470661700",

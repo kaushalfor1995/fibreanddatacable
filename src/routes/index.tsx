@@ -12,9 +12,10 @@ import { CtaBand } from "@/components/site/CtaBand";
 import { services } from "@/lib/services";
 import { faqs, processSteps, site, whyChooseUs } from "@/lib/site";
 
-const title = "NBN Fibre Installation & Data Cabling & CCTV Perth | Fibre and Data Cabling";
+const url = "https://fibreanddatacable.com.au/";
+const title = "NBN Fibre Installation & Data Cabling Perth | Fibre & Data Cabling";
 const description =
-  "Professional NBN fibre installation, NBN box relocation, fibre optic repairs and CAT6 data cabling, CCTV camera install across Perth. Contact Fibre and Data Cabling today. Call 0470 661 700.";
+  "Perth cabling for NBN FTTP pathways, NBN box relocation, fibre optic repairs, CAT6 data points and CCTV. Request a free quote.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -23,16 +24,11 @@ export const Route = createFileRoute("/")({
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: url },
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
     ],
-    links: [
-  {
-    rel: "canonical",
-    href: "https://fibreanddatacable.com.au/",
-  },
-],
+    links: [{ rel: "canonical", href: url }],
     scripts: [
       {
         type: "application/ld+json",
@@ -330,12 +326,12 @@ function Home() {
     </article>
   </div>
 
-  <a
-    href="/contact"
+  <Link
+    to="/contact"
     className="mt-8 inline-block rounded bg-blue-700 px-6 py-3 font-semibold text-white hover:bg-blue-800"
   >
     Request a Free Quote
-  </a>
+  </Link>
 </section>
       <CtaBand />
 
