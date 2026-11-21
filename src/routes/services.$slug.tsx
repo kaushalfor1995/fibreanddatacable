@@ -54,6 +54,7 @@ export const Route = createFileRoute("/services/$slug")({
 
 function ServiceDetail() {
   const { service } = Route.useLoaderData();
+  const photo = service.detailImage;
   const others =
     service.relatedSlugs?.map(getService).filter((related) => related !== undefined) ??
     services.filter((candidate) => candidate.slug !== service.slug).slice(0, 3);
@@ -92,11 +93,12 @@ function ServiceDetail() {
           </div>
           <div className="overflow-hidden rounded-2xl border border-border shadow-lift">
             <img
-              src={service.image}
-              alt={service.alt}
+              src={photo?.src ?? service.image}
+              alt={photo?.alt ?? service.alt}
               width={1200}
               height={912}
               className="aspect-[4/3] w-full object-cover"
+              style={{ objectPosition: photo?.position }}
             />
           </div>
         </div>

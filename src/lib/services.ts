@@ -18,6 +18,7 @@ export type Service = {
   relatedSlugs?: string[];
   image: string;
   alt: string;
+  detailImage?: { src: string; alt: string; position: string };
   featured?: boolean;
   points: string[];
 };
@@ -291,6 +292,11 @@ export const services: Service[] = [
     relatedSlugs: ["nbn-fttp-pathway", "data-cabling", "fibre-optic-installation"],
     image: "/job-photos/nbn-fibre-connection-box.jpg",
     alt: "Wall-mounted indoor NBN fibre connection box",
+    detailImage: {
+      src: "/service-images/nbn-fttp-box.webp",
+      alt: "Indoor NBN FTTP connection box and enclosure mounted on a wall",
+      position: "center bottom",
+    },
     points: [
       "Assessment of the current NBN box, fibre cable and proposed location",
       "Planning the fibre route and any conduit needed",
