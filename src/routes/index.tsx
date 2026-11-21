@@ -306,7 +306,13 @@ function Home() {
   <div className="grid gap-6 md:grid-cols-2">
     <article>
       <h3 className="mb-2 text-xl font-semibold">
-        NBN Box Relocation in Perth
+        <Link
+          to="/services/$slug"
+          params={{ slug: "nbn-box-relocation" }}
+          className="underline decoration-border underline-offset-4 hover:text-brand"
+        >
+          NBN Box Relocation in Perth
+        </Link>
       </h3>
       <p>
         We can assess your current cabling and discuss options for relocating

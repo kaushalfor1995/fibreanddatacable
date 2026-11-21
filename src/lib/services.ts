@@ -14,6 +14,7 @@ export type Service = {
   heading?: string;
   seo?: { title: string; description: string };
   quoteDetails?: string;
+  questions?: { q: string; a: string }[];
   relatedSlugs?: string[];
   image: string;
   alt: string;
@@ -38,7 +39,7 @@ export const services: Service[] = [
     },
     quoteDetails:
       "Tell us your Perth suburb, property type and where you’d like the indoor NBN box. Mention any known blocked conduit, long driveway or route between floors. If you have photos of the existing conduit and proposed box location, have them handy so we can discuss the route with you.",
-    relatedSlugs: ["lead-in-communication-conduit", "fibre-optic-installation", "data-cabling"],
+    relatedSlugs: ["nbn-box-relocation", "lead-in-communication-conduit", "fibre-optic-installation"],
     image: heroConduit,
     alt: "Telecommunications technician installing white surface-mounted conduit above an NBN LUCA box on a modern two-storey Perth home",
     points: [
@@ -261,6 +262,44 @@ export const services: Service[] = [
       "Emergency splicing and jointing",
       "Damaged conduit and pit repair",
       "Rapid Perth metro response",
+    ],
+  },
+  {
+    slug: "nbn-box-relocation",
+    title: "NBN Box Relocation",
+    icon: "Route",
+    short: "Move your indoor NBN FTTP connection box to a more practical location in your Perth home or business.",
+    description:
+      "Need to move your indoor NBN connection box from a bedroom or garage to another room? We assess the existing fibre cable and your preferred location, then plan a route for the connection box, also called the NTD. We confirm what work can be done before quoting.",
+    seo: {
+      title: "NBN Box Relocation Perth | Fibre & Data Cabling",
+      description:
+        "Need to move your indoor NBN FTTP box in Perth? We assess cable access and your preferred location. Send your job details for a free quote.",
+    },
+    quoteDetails:
+      "Tell us your Perth suburb, where the NBN box is now and where you want it moved. Mention the property type, whether the route crosses floors and whether there is a power point near the proposed position. Photos of both locations and any visible conduit can help us assess access.",
+    questions: [
+      {
+        q: "What affects the cost of relocating an NBN box?",
+        a: "The price depends on the length of the fibre route, access to the walls or roof space, whether the run crosses floors and whether new conduit is needed. We review those details before quoting.",
+      },
+      {
+        q: "Should I move my NBN box or my Wi-Fi router?",
+        a: "If your goal is better Wi-Fi coverage, an Ethernet cable to a better router location or a wired access point may solve it. A relocation makes sense when you need the NBN connection box itself moved for room layout, access or renovation.",
+      },
+      {
+        q: "Who can move the outdoor NBN box?",
+        a: "Contact nbn’s Relocation Works team for external nbn equipment. For your indoor FTTP connection box, we can assess the proposed move against nbn’s Authority to Alter guidelines.",
+      },
+    ],
+    relatedSlugs: ["nbn-fttp-pathway", "data-cabling", "fibre-optic-installation"],
+    image: "/job-photos/nbn-fibre-connection-box.jpg",
+    alt: "Wall-mounted indoor NBN fibre connection box",
+    points: [
+      "Assessment of the current NBN box, fibre cable and proposed location",
+      "Planning the fibre route and any conduit needed",
+      "Indoor FTTP connection box relocation where permitted for the job",
+      "Testing after the move",
     ],
   },
 ];
