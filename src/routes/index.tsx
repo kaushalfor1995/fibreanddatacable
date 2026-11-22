@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, CheckCircle2, Phone, ShieldCheck, Star, Clock, Award } from "lucide-react";
-import heroConduit from "@/assets/hero-conduit.jpg";
 import { Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/site/SectionHeading";
 import { ServiceCard } from "@/components/site/ServiceCard";
@@ -87,12 +86,12 @@ function Home() {
 
           <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-lift">
             <img
-              src={heroConduit}
-              alt="Telecommunications technician in full PPE installing white surface-mounted conduit above an NBN LUCA box on a modern two-storey Perth home"
-              width={1600}
-              height={1104}
+              src="/service-images/home-nbn-cat6.webp"
+              alt="Illustration of NBN installation at a two-storey home, an indoor NBN connection box and Cat6 RJ45 data outlets"
+              width={1774}
+              height={887}
               fetchPriority="high"
-              className="aspect-[4/3] w-full object-cover"
+              className="h-auto w-full"
             />
           </div>
         </div>
