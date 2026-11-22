@@ -105,11 +105,11 @@ export const services: Service[] = [
   {
     slug: "data-cabling",
     title: "Data Cabling",
-    heading: "Data Cabling & Data Point Installation in Perth",
+    heading: "Cat6 Ethernet & Data Point Installation in Perth",
     icon: "Network",
-    short: "CAT6 Ethernet and data point installation for Perth homes, offices and commercial fit-outs.",
+    short: "Cat6 Ethernet data points for Perth home offices, smart TVs, gaming rooms and Wi-Fi access points.",
     description:
-      "Need an Ethernet outlet for a home office, TV or Wi-Fi access point? We provide data point installation and structured data cabling across Perth. We run Cat5e, CAT6 and CAT6A cable for single outlets and multi-room jobs, then terminate, label and test the outlets.",
+      "Need an Ethernet outlet for a home office, gaming desk, smart TV or Wi-Fi access point? We provide data point installation and structured data cabling across Perth. We run Cat5e, CAT6 and CAT6A cable for single outlets and multi-room jobs, then terminate, label and test the outlets.",
     seo: {
       title: "Data Cabling Perth | CAT6 Data Point Installation",
       description:
@@ -131,7 +131,7 @@ export const services: Service[] = [
   {
     slug: "network-cabling",
     title: "Network Cabling",
-    heading: "Commercial Data & Network Cabling in Perth",
+    heading: "Commercial Data Cabling & Shop Fitouts in Perth",
     icon: "Server",
     short: "Commercial data cabling for Perth offices, fit-outs and communications rooms, including racks and patch panels.",
     description:

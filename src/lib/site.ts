@@ -58,9 +58,13 @@ export const processSteps = [
 ];
 
 export const faqs = [
+  { q: "How much does NBN box relocation cost in Perth?", a: "The quote depends on the fibre cable length, wall and roof access, whether the route crosses floors and any new conduit needed. Send your suburb and photos of the current and proposed locations for a free quote." },
+  { q: "Can you install Cat6 data points in a two-storey home?", a: "We assess routes between floors and install Cat6 Ethernet outlets where access allows. Tell us where your router is and which rooms need wired connections, including home offices, gaming desks and smart TVs." },
+  { q: "Can you run cabling for a Wi-Fi access point?", a: "Yes. We can run Ethernet cabling to a suitable access point or router location. Coverage depends on the equipment, its placement and the layout of the property; cabling alone does not guarantee a particular Wi-Fi speed." },
+  { q: "Do you cable new homes and shop fitouts?", a: "Yes. We plan data outlets, communications cabinets and cable routes for new homes, renovations, offices and shops. Send your floor plan and build or fitout stage so access can be assessed before walls and ceilings are closed." },
   {
     q: "What is an NBN FTTP pathway and do I need one?",
-    a: "An FTTP pathway is the conduit route that carries the fibre lead-in from the street pit to your premises and on to the internal fibre wall outlet. NBN requires a compliant, clear pathway before fibre can be pulled through, so most new builds and FTTP upgrades in Perth need one installed or remediated.",
+    a: "A customer-installed FTTP pathway is a suitable route for fibre cable to your preferred indoor NBN connection box location. You may need one when the proposed location is outside the standard installation scope or existing conduit is blocked. We assess the route and access before quoting. NBN completes the network connection through your internet provider.",
   },
   {
     q: "Do you service all of the Perth metropolitan area?",
@@ -68,7 +72,7 @@ export const faqs = [
   },
   {
     q: "Do you work on commercial projects as well as homes?",
-    a: "We do. Alongside residential NBN pathways we deliver commercial data cabling, network cabling, CCTV, comms room fit-outs, pit and pipe and civil telecommunications works.",
+    a: "We do. Alongside residential NBN pathways we deliver commercial data cabling, network cabling, CCTV, communications room fitouts and cabling for offices and shops.",
   },
   {
     q: "Is your work compliant and tested?",

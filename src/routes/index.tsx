@@ -12,9 +12,9 @@ import { services } from "@/lib/services";
 import { faqs, processSteps, site, whyChooseUs } from "@/lib/site";
 
 const url = "https://fibreanddatacable.com.au/";
-const title = "NBN Fibre Installation & Data Cabling Perth | Fibre & Data Cabling";
+const title = "NBN Box Relocation & Data Cabling Perth | Fibre & Data Cabling";
 const description =
-  "Perth cabling for NBN FTTP pathways, NBN box relocation, fibre optic repairs, CAT6 data points and CCTV. Request a free quote.";
+  "NBN box relocation, FTTP pathways and Cat6 Ethernet data points in Perth. Cabling for homes, home offices and shop fitouts. Free quotes. Call 0470 661 700.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -59,11 +59,12 @@ function Home() {
               <ShieldCheck className="size-3.5" /> Perth, Western Australia
             </span>
             <h1 className="mt-5 text-4xl leading-tight font-semibold text-balance sm:text-5xl">
-              Fibre Installation &amp; Professional Data Cabling in Perth
+              NBN Box Relocation &amp; Data Cabling in Perth
             </h1>
             <p className="mt-5 max-w-xl text-base text-muted-foreground sm:text-lg">
-              Specialists in NBN FTTP Pathways, Fibre Optic Installation, Data Cabling, CCTV
-              Installation and Telecommunications Services for Residential and Commercial Projects.
+              Need your NBN box moved, an FTTP pathway installed or a Cat6 data point for your
+              home office? We provide fibre and Ethernet cabling for Perth homes and businesses,
+              including two-storey houses, new builds and shop fitouts.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild size="lg">
@@ -136,8 +137,8 @@ function Home() {
             <SectionHeading
               align="left"
               eyebrow="About Us"
-              title="A trusted Perth telecommunications contractor"
-              subtitle="Fibre & Data Cable Pathway delivers quality workmanship, reliable service and genuine customer satisfaction for residential and commercial clients right across the Perth metropolitan area."
+              title="Cabling for home offices, new homes and shop fitouts"
+              subtitle="Fibre & Data Cabling installs cable routes for NBN connections, routers, home-office desks, smart TVs and business networks across Perth."
             />
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               From NBN FTTP pathways and lead-in conduit through to structured data cabling, fibre
@@ -192,8 +193,8 @@ function Home() {
       <section className="container-page py-16 lg:py-20">
         <SectionHeading
           eyebrow="Our Services"
-          title="Complete fibre and data solutions"
-          subtitle="Licensed telecommunications services for homes, businesses and developments across Perth."
+          title="NBN, Ethernet and data cabling services in Perth"
+          subtitle="FTTP upgrade preparation, fibre repairs, Cat6 data points and CCTV installation for homes and businesses across Perth."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.slice(0, 6).map((s) => (
