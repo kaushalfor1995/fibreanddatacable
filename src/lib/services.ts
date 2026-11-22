@@ -186,22 +186,6 @@ export const services: Service[] = [
     ],
   },
   {
-    slug: "pit-and-pipe-installation",
-    title: "Pit & Pipe Installation",
-    icon: "Boxes",
-    short: "Telecommunications pits and conduit networks installed to Australian civil standards.",
-    description:
-      "Supply and installation of telecommunications pits and conduit networks, including excavation, bedding, pit setting, conduit jointing, backfill and full site reinstatement.",
-    image: "/service-images/communications-pit-and-conduit.webp",
-    alt: "Illustrative photo of a simple telecommunications pit and white conduit beside a driveway",
-    points: [
-      "Pit supply, setting and lid finishing",
-      "Conduit jointing and proving",
-      "Excavation, bedding and compacted backfill",
-      "Reinstatement of lawn, paving and driveways",
-    ],
-  },
-  {
     slug: "lead-in-communication-conduit",
     title: "Lead-in Communication Conduit Installation",
     icon: "Waypoints",
