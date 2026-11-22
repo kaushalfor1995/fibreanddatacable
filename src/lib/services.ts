@@ -68,8 +68,8 @@ export const services: Service[] = [
     quoteDetails:
       "Tell us the Perth suburb, where the fibre needs to start and finish, and the estimated cable length. Let us know if you already have conduit, racks or patch panels, and whether the installation needs to happen outside business hours.",
     relatedSlugs: ["fibre-splicing", "network-cabling", "nbn-fttp-pathway"],
-    image: fibreSplicing,
-    alt: "Fibre optic cable being prepared for installation by a qualified technician",
+    image: "/job-photos/fibre-enclosure-cable-routing.jpg",
+    alt: "Open fibre enclosure showing optical connectors and fibre cable routing",
     points: [
       "Single-mode and multi-mode fibre installation",
       "Backbone, riser and inter-building links",
@@ -176,8 +176,8 @@ export const services: Service[] = [
     short: "New estate, MDU and commercial NBN infrastructure delivered to network standards.",
     description:
       "NBN infrastructure works for developments, multi-dwelling units and commercial sites, including conduit networks, pit installation, hauling and pathway provisioning to the standards required for network acceptance.",
-    image: trenchConduit,
-    alt: "New underground telecommunications conduit infrastructure installed in a trench",
+    image: "/job-photos/nbn-connection-enclosure.jpg",
+    alt: "Open NBN connection enclosure showing telecommunications infrastructure and cable routing",
     points: [
       "New estate and subdivision infrastructure",
       "MDU and multi-tenant pathway provisioning",
@@ -192,8 +192,8 @@ export const services: Service[] = [
     short: "Telecommunications pits and conduit networks installed to Australian civil standards.",
     description:
       "Supply and installation of telecommunications pits and conduit networks, including excavation, bedding, pit setting, conduit jointing, backfill and full site reinstatement.",
-    image: trenchConduit,
-    alt: "Underground telecommunications pit and conduit installation in progress",
+    image: "/service-images/communications-pit-and-conduit.webp",
+    alt: "Illustrative photo of a simple telecommunications pit and white conduit beside a driveway",
     points: [
       "Pit supply, setting and lid finishing",
       "Conduit jointing and proving",
@@ -208,8 +208,8 @@ export const services: Service[] = [
     short: "P20 lead-in conduit installed from the street pit to your premises, ready for fibre hauling.",
     description:
       "Installation of new lead-in communication conduit from the NBN street pit to your building, trenched to the required depth with a draw rope, marker tape and neat reinstatement — ready for the fibre haul.",
-    image: trenchConduit,
-    alt: "New white P20 lead-in communication conduit laid neatly in an underground trench before backfilling",
+    image: "/job-photos/underground-communications-conduit.jpg",
+    alt: "Lead-in communications conduit installed beside lifted driveway pavers",
     points: [
       "P20 lead-in conduit supply and installation",
       "Trenching to required depth with marker tape",
@@ -225,7 +225,7 @@ export const services: Service[] = [
     description:
       "Civil works supporting telecommunications delivery — trenching, directional boring, driveway and road crossings, pit installation, traffic management coordination and full reinstatement, delivered safely and to specification.",
     image: trenchConduit,
-    alt: "Civil telecommunications trenching works on an Australian residential street",
+    alt: "White telecommunications conduit laid in a neat residential trench",
     points: [
       "Trenching and directional boring",
       "Driveway, footpath and road crossings",
@@ -240,8 +240,8 @@ export const services: Service[] = [
     short: "Scheduled and reactive maintenance to keep your fibre and data network performing.",
     description:
       "Ongoing maintenance for business networks — inspections, testing, re-termination, moves and changes, and documentation updates — so small issues are found before they become downtime.",
-    image: dataCabling,
-    alt: "Technician performing maintenance and testing on a network cabling rack",
+    image: "/job-photos/network-switch-ethernet-cabling.jpg",
+    alt: "Network switch and Ethernet cabling at a wall-mounted communications cabinet",
     points: [
       "Scheduled inspections and testing",
       "Fault finding and re-termination",
@@ -256,8 +256,8 @@ export const services: Service[] = [
     short: "Rapid response fault location, splicing and repair for damaged fibre across Perth.",
     description:
       "When a fibre link goes down, we locate the fault with OTDR testing, expose and repair the damage, splice and test the link, and get you reconnected as quickly as possible.",
-    image: fibreSplicing,
-    alt: "Emergency fibre optic repair and splicing being carried out onsite",
+    image: "/job-photos/fibre-optical-power-testing.jpg",
+    alt: "Optical power meter connected to a fibre enclosure for fault testing",
     points: [
       "OTDR fault location",
       "Emergency splicing and jointing",
