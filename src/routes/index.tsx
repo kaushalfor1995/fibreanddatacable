@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, CheckCircle2, Phone, ShieldCheck, Star, Clock, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -49,6 +50,19 @@ export const Route = createFileRoute("/")({
 const featured = services[0]!;
 
 function Home() {
+  useEffect(() => {
+    const container = document.getElementById("soro-blog");
+    if (!container) return;
+    const script = document.createElement("script");
+    script.src = "https://app.trysoro.com/api/embed/d74fcfda-fe78-480c-a1a6-f5a5c96e9eb6";
+    script.defer = true;
+    container.after(script);
+    return () => {
+      script.remove();
+      container.replaceChildren();
+    };
+  }, []);
+
   return (
     <>
       {/* Hero */}
@@ -277,6 +291,14 @@ function Home() {
         <div className="mt-12">
           <ReviewsCarousel />
         </div>
+      </section>
+
+      <section id="blog" aria-labelledby="blog-heading" className="container-page py-16 lg:py-20">
+        <h2 id="blog-heading" className="text-3xl font-semibold">NBN &amp; Data Cabling Blog</h2>
+        <p className="mt-3 mb-8 text-muted-foreground">
+          Tips and guides for Perth homes and businesses.
+        </p>
+        <div id="soro-blog" />
       </section>
 
       {/* FAQ */}
